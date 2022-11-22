@@ -1,17 +1,18 @@
 package com.generics;
 
 public class TestMaximum {
-    float x, y, z;
+    String x, y, z;
 
-    public TestMaximum(float x, float y, float z) {
+    // constructor
+    public TestMaximum(String x, String y, String z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }
 
     // checking max of three integers
-    public static Float testMaximum(Float x, Float y, Float z) {
-        Float max = x;// Initializing x as greater
+    public static String testMaximum(String x, String y, String z) {
+        String max = x;// initialising x as greater
         if (y.compareTo(max) > 0)
             max = y;// as of now y is greater
 
@@ -22,8 +23,7 @@ public class TestMaximum {
 
     }
 
-    public static void printMax(Float x, Float y, Float z, Float max) {
-        System.out.printf("the max of %s , %s and %s is %s\n", x, y, z, max);
-
+    public static void printMax(String x, String y, String z, String max) {
+        System.out.printf("The maximum from string of %s , %s and %s is %s\n", x, y, z, max);
     }
 }
